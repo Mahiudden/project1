@@ -1,0 +1,51 @@
+.c{
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+    margin: 100px auto;
+    position: relative;
+    /*
+    animation-name:square;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: ;
+    animation-duration: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running;*/
+    animation: square  4s linear 2s alternate backwards running;
+}
+
+@keyframes square{
+    0%{
+        background-color: tomato;
+        left: 0px;
+        right: 0px;   
+    }
+    35%{
+        background-color: blue;
+        left: 500px;
+        right: 0px;
+    }
+    40%{
+        background-color: green;
+        left: 0px;
+        right: 500px;
+        border-radius: 50%;
+    }
+    50%{
+        background-color: wheat;
+        left: 0px;
+        right: 500px;
+        
+    }
+    80%{
+        background-color: rgb(179, 245, 220);
+        left: 0px;
+        right: 0px;
+        border-radius: 30%;
+    }
+    100%{background-color: rgb(156, 46, 123);}
+}
+
+
